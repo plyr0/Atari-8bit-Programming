@@ -1,0 +1,743 @@
+Modules list:
+-------------
+main.o:
+    CODE              Offs=000000  Size=0000CA  Align=00001  Fill=0000
+    RODATA            Offs=000000  Size=00008D  Align=00001  Fill=0000
+    BSS               Offs=000000  Size=000004  Align=00001  Fill=0000
+C:\cc65\lib/atari.lib(_directerrno.o):
+    CODE              Offs=0000CA  Size=00000A  Align=00001  Fill=0000
+C:\cc65\lib/atari.lib(_file.o):
+    DATA              Offs=000000  Size=00001E  Align=00001  Fill=0000
+C:\cc65\lib/atari.lib(_hextab.o):
+    RODATA            Offs=00008D  Size=000010  Align=00001  Fill=0000
+C:\cc65\lib/atari.lib(_longminstr.o):
+    RODATA            Offs=00009D  Size=00000C  Align=00001  Fill=0000
+C:\cc65\lib/atari.lib(_mappederrno.o):
+    CODE              Offs=0000D4  Size=000010  Align=00001  Fill=0000
+C:\cc65\lib/atari.lib(_oserror.o):
+    BSS               Offs=000004  Size=000001  Align=00001  Fill=0000
+C:\cc65\lib/atari.lib(_printf.o):
+    CODE              Offs=0000E4  Size=0003A5  Align=00001  Fill=0000
+    BSS               Offs=000005  Size=00002B  Align=00001  Fill=0000
+    DATA              Offs=00001E  Size=000003  Align=00001  Fill=0000
+C:\cc65\lib/atari.lib(_scanf.o):
+    CODE              Offs=000489  Size=000797  Align=00001  Fill=0000
+    RODATA            Offs=0000A9  Size=000010  Align=00001  Fill=0000
+    BSS               Offs=000030  Size=000042  Align=00001  Fill=0000
+C:\cc65\lib/atari.lib(_seterrno.o):
+    CODE              Offs=000C20  Size=000009  Align=00001  Fill=0000
+C:\cc65\lib/atari.lib(addysp.o):
+    CODE              Offs=000C29  Size=00000E  Align=00001  Fill=0000
+C:\cc65\lib/atari.lib(axlong.o):
+    CODE              Offs=000C37  Size=00000D  Align=00001  Fill=0000
+C:\cc65\lib/atari.lib(callmain.o):
+    CODE              Offs=000C44  Size=000017  Align=00001  Fill=0000
+    DATA              Offs=000021  Size=000004  Align=00001  Fill=0000
+C:\cc65\lib/atari.lib(compl.o):
+    CODE              Offs=000C5B  Size=000009  Align=00001  Fill=0000
+C:\cc65\lib/atari.lib(condes.o):
+    CODE              Offs=000C64  Size=00000C  Align=00001  Fill=0000
+    DATA              Offs=000025  Size=000025  Align=00001  Fill=0000
+    ONCE              Offs=000000  Size=00000C  Align=00001  Fill=0000
+C:\cc65\lib/atari.lib(crt0.o):
+    BSS               Offs=000072  Size=000005  Align=00001  Fill=0000
+    STARTUP           Offs=000000  Size=000063  Align=00001  Fill=0000
+C:\cc65\lib/atari.lib(ctype.o):
+    RODATA            Offs=0000B9  Size=00008B  Align=00001  Fill=0000
+C:\cc65\lib/atari.lib(ctypemask.o):
+    CODE              Offs=000C70  Size=00001E  Align=00001  Fill=0000
+C:\cc65\lib/atari.lib(decaxy.o):
+    CODE              Offs=000C8E  Size=000009  Align=00001  Fill=0000
+C:\cc65\lib/atari.lib(decsp1.o):
+    CODE              Offs=000C97  Size=000009  Align=00001  Fill=0000
+C:\cc65\lib/atari.lib(decsp4.o):
+    CODE              Offs=000CA0  Size=00000D  Align=00001  Fill=0000
+C:\cc65\lib/atari.lib(decsp6.o):
+    CODE              Offs=000CAD  Size=00000D  Align=00001  Fill=0000
+C:\cc65\lib/atari.lib(do_oserr.o):
+    CODE              Offs=000CBA  Size=000004  Align=00001  Fill=0000
+C:\cc65\lib/atari.lib(errno.o):
+    BSS               Offs=000077  Size=000002  Align=00001  Fill=0000
+C:\cc65\lib/atari.lib(exehdr.o):
+    EXEHDR            Offs=000000  Size=000002  Align=00001  Fill=0000
+    MAINHDR           Offs=000000  Size=000004  Align=00001  Fill=0000
+C:\cc65\lib/atari.lib(exetrailer.o):
+    AUTOSTRT          Offs=000000  Size=000006  Align=00001  Fill=0000
+C:\cc65\lib/atari.lib(fdtab.o):
+    DATA              Offs=00004A  Size=00002C  Align=00001  Fill=0000
+C:\cc65\lib/atari.lib(fdtoiocb.o):
+    CODE              Offs=000CBE  Size=000022  Align=00001  Fill=0000
+C:\cc65\lib/atari.lib(fgetc.o):
+    CODE              Offs=000CE0  Size=00008A  Align=00001  Fill=0000
+C:\cc65\lib/atari.lib(fmisc.o):
+    CODE              Offs=000D6A  Size=000044  Align=00001  Fill=0000
+C:\cc65\lib/atari.lib(fwrite.o):
+    CODE              Offs=000DAE  Size=00007B  Align=00001  Fill=0000
+    BSS               Offs=000079  Size=000002  Align=00001  Fill=0000
+C:\cc65\lib/atari.lib(incsp1.o):
+    CODE              Offs=000E29  Size=000007  Align=00001  Fill=0000
+C:\cc65\lib/atari.lib(incsp2.o):
+    CODE              Offs=000E30  Size=000016  Align=00001  Fill=0000
+C:\cc65\lib/atari.lib(incsp3.o):
+    CODE              Offs=000E46  Size=000005  Align=00001  Fill=0000
+C:\cc65\lib/atari.lib(incsp6.o):
+    CODE              Offs=000E4B  Size=000005  Align=00001  Fill=0000
+C:\cc65\lib/atari.lib(incsp8.o):
+    CODE              Offs=000E50  Size=000005  Align=00001  Fill=0000
+C:\cc65\lib/atari.lib(inviocb.o):
+    CODE              Offs=000E55  Size=000005  Align=00001  Fill=0000
+C:\cc65\lib/atari.lib(isdigit.o):
+    CODE              Offs=000E5A  Size=000008  Align=00001  Fill=0000
+C:\cc65\lib/atari.lib(isspace.o):
+    CODE              Offs=000E62  Size=000008  Align=00001  Fill=0000
+C:\cc65\lib/atari.lib(isxdigit.o):
+    CODE              Offs=000E6A  Size=000008  Align=00001  Fill=0000
+C:\cc65\lib/atari.lib(jmpvec.o):
+    DATA              Offs=000076  Size=000003  Align=00001  Fill=0000
+C:\cc65\lib/atari.lib(ladd.o):
+    CODE              Offs=000E72  Size=000025  Align=00001  Fill=0000
+C:\cc65\lib/atari.lib(ldaxi.o):
+    CODE              Offs=000E97  Size=00000D  Align=00001  Fill=0000
+C:\cc65\lib/atari.lib(ldaxsp.o):
+    CODE              Offs=000EA4  Size=000009  Align=00001  Fill=0000
+C:\cc65\lib/atari.lib(leaaxsp.o):
+    CODE              Offs=000EAD  Size=00000C  Align=00001  Fill=0000
+C:\cc65\lib/atari.lib(lmul.o):
+    CODE              Offs=000EB9  Size=00005C  Align=00001  Fill=0000
+C:\cc65\lib/atari.lib(lneg.o):
+    CODE              Offs=000F15  Size=00001E  Align=00001  Fill=0000
+C:\cc65\lib/atari.lib(longjmp.o):
+    CODE              Offs=000F33  Size=000028  Align=00001  Fill=0000
+C:\cc65\lib/atari.lib(lpush.o):
+    CODE              Offs=000F5B  Size=000021  Align=00001  Fill=0000
+C:\cc65\lib/atari.lib(ltoa.o):
+    CODE              Offs=000F7C  Size=000095  Align=00001  Fill=0000
+C:\cc65\lib/atari.lib(makebool.o):
+    CODE              Offs=001011  Size=00002C  Align=00001  Fill=0000
+C:\cc65\lib/atari.lib(mod.o):
+    CODE              Offs=00103D  Size=000011  Align=00001  Fill=0000
+C:\cc65\lib/atari.lib(mul.o):
+    CODE              Offs=00104E  Size=000045  Align=00001  Fill=0000
+C:\cc65\lib/atari.lib(mul8.o):
+    CODE              Offs=001093  Size=00003A  Align=00001  Fill=0000
+C:\cc65\lib/atari.lib(mulax10.o):
+    CODE              Offs=0010CD  Size=000019  Align=00001  Fill=0000
+C:\cc65\lib/atari.lib(negabs.o):
+    CODE              Offs=0010E6  Size=000012  Align=00001  Fill=0000
+C:\cc65\lib/atari.lib(oserror.o):
+    CODE              Offs=0010F8  Size=00001A  Align=00001  Fill=0000
+    RODATA            Offs=000144  Size=000038  Align=00001  Fill=0000
+C:\cc65\lib/atari.lib(popptr1.o):
+    CODE              Offs=001112  Size=00000E  Align=00001  Fill=0000
+C:\cc65\lib/atari.lib(printf.o):
+    CODE              Offs=001120  Size=000033  Align=00001  Fill=0000
+    BSS               Offs=00007B  Size=000001  Align=00001  Fill=0000
+C:\cc65\lib/atari.lib(push1.o):
+    CODE              Offs=001153  Size=000005  Align=00001  Fill=0000
+C:\cc65\lib/atari.lib(pusha.o):
+    CODE              Offs=001158  Size=000016  Align=00001  Fill=0000
+C:\cc65\lib/atari.lib(pushax.o):
+    CODE              Offs=00116E  Size=00001A  Align=00001  Fill=0000
+C:\cc65\lib/atari.lib(pushwsp.o):
+    CODE              Offs=001188  Size=00001C  Align=00001  Fill=0000
+C:\cc65\lib/atari.lib(rand.o):
+    CODE              Offs=0011A4  Size=000034  Align=00001  Fill=0000
+    DATA              Offs=000079  Size=000004  Align=00001  Fill=0000
+C:\cc65\lib/atari.lib(read.o):
+    CODE              Offs=0011D8  Size=0000DA  Align=00001  Fill=0000
+    BSS               Offs=00007C  Size=000051  Align=00001  Fill=0000
+    EXTZP             Offs=000000  Size=000005  Align=00001  Fill=0000
+C:\cc65\lib/atari.lib(regswap2.o):
+    CODE              Offs=0012B2  Size=000016  Align=00001  Fill=0000
+C:\cc65\lib/atari.lib(return0.o):
+    CODE              Offs=0012C8  Size=000004  Align=00001  Fill=0000
+C:\cc65\lib/atari.lib(rwcommon.o):
+    CODE              Offs=0012CC  Size=00002D  Align=00001  Fill=0000
+C:\cc65\lib/atari.lib(scanf.o):
+    CODE              Offs=0012F9  Size=000033  Align=00001  Fill=0000
+    BSS               Offs=0000CD  Size=000001  Align=00001  Fill=0000
+C:\cc65\lib/atari.lib(setjmp.o):
+    CODE              Offs=00132C  Size=000025  Align=00001  Fill=0000
+C:\cc65\lib/atari.lib(shelp.o):
+    CODE              Offs=001351  Size=000020  Align=00001  Fill=0000
+C:\cc65\lib/atari.lib(strlen.o):
+    CODE              Offs=001371  Size=000016  Align=00001  Fill=0000
+C:\cc65\lib/atari.lib(strlower.o):
+    CODE              Offs=001387  Size=000027  Align=00001  Fill=0000
+C:\cc65\lib/atari.lib(sub.o):
+    CODE              Offs=0013AE  Size=000015  Align=00001  Fill=0000
+C:\cc65\lib/atari.lib(system_check.o):
+    SYSCHK            Offs=000000  Size=0000F6  Align=00001  Fill=0000
+C:\cc65\lib/atari.lib(system_check_hdr.o):
+    SYSCHKHDR         Offs=000000  Size=000004  Align=00001  Fill=0000
+C:\cc65\lib/atari.lib(system_check_trailer.o):
+    SYSCHKTRL         Offs=000000  Size=000006  Align=00001  Fill=0000
+C:\cc65\lib/atari.lib(tolower.o):
+    CODE              Offs=0013C3  Size=000012  Align=00001  Fill=0000
+C:\cc65\lib/atari.lib(udiv.o):
+    CODE              Offs=0013D5  Size=00004F  Align=00001  Fill=0000
+C:\cc65\lib/atari.lib(ungetc.o):
+    CODE              Offs=001424  Size=00002E  Align=00001  Fill=0000
+C:\cc65\lib/atari.lib(vfprintf.o):
+    CODE              Offs=001452  Size=000061  Align=00001  Fill=0000
+    DATA              Offs=00007D  Size=000008  Align=00001  Fill=0000
+C:\cc65\lib/atari.lib(vfscanf.o):
+    CODE              Offs=0014B3  Size=000033  Align=00001  Fill=0000
+    DATA              Offs=000085  Size=000006  Align=00001  Fill=0000
+C:\cc65\lib/atari.lib(write.o):
+    CODE              Offs=0014E6  Size=000028  Align=00001  Fill=0000
+C:\cc65\lib/atari.lib(zerobss.o):
+    CODE              Offs=00150E  Size=000023  Align=00001  Fill=0000
+C:\cc65\lib/atari.lib(zeropage.o):
+    ZEROPAGE          Offs=000000  Size=00001A  Align=00001  Fill=0000
+
+
+Segment list:
+-------------
+Name                   Start     End    Size  Align
+----------------------------------------------------
+AUTOSTRT              000000  000005  000006  00001
+EXEHDR                000000  000001  000002  00001
+MAINHDR               000000  000003  000004  00001
+SYSCHKHDR             000000  000003  000004  00001
+SYSCHKTRL             000000  000005  000006  00001
+ZEROPAGE              000082  00009B  00001A  00001
+EXTZP                 00009C  0000A0  000005  00001
+STARTUP               002000  002062  000063  00001
+ONCE                  002063  00206E  00000C  00001
+CODE                  00206F  00359F  001531  00001
+SYSCHK                002E00  002EF5  0000F6  00001
+RODATA                0035A0  00371B  00017C  00001
+DATA                  00371C  0037A6  00008B  00001
+BSS                   0037A7  003874  0000CE  00001
+
+
+Exports list by name:
+---------------------
+__AUTOSTART__             000001 REA    __BSS_LOAD__              0037A7 RLA    
+__BSS_RUN__               0037A7 RLA    __BSS_SIZE__              0000CE REA    
+__CONSTRUCTOR_COUNT__     000000 REA    __CONSTRUCTOR_TABLE__     00206F RLA    
+__DESTRUCTOR_COUNT__      000000 REA    __DESTRUCTOR_TABLE__      00371C RLA    
+__EXEHDR__                000001 REA    __LOWCODE_RUN__           002063 RLA    
+__LOWCODE_SIZE__          000000 REA    __MAIN_START__            002000 RLA    
+__RESERVED_MEMORY__       000000 REA    __STACKSIZE__             000800 REA    
+__STARTADDRESS__          002000 REA    __STARTUP__               000001 REA    
+__SYSCHKHDR__             000001 REA    __SYSCHKTRL__             000001 REA    
+__SYSCHK_END__            002EF6 RLA    __SYSCHK_LOAD__           002E00 RLA    
+__SYSTEM_CHECK__          002E47 REA    __ctype                   003659 RLA    
+__ctypeidx                003664 RLA    __directerrno             002139 RLA    
+__do_oserror              002D29 RLA    __errno                   00381E RLA    
+__hextab                  00362D RLA    __inviocb                 002EC4 RLA    
+__longminstr              00363D RLA    __mappederrno             002143 RLA    
+__oserror                 0037AB RLA    __osmaperrno              003167 RLA    
+__printf                  002246 RLA    __rwsetup                 00333B RLA    
+__scanf                   0024F8 RLA    __seterrno                002C8F RLA    
+__setjmp                  00339B RLA    _ferror                   002DFC RLA    
+_fgetc                    002D4F RLA    _fwrite                   002E1D RLA    
+_isdigit                  002EC9 RLA    _isspace                  002ED1 RLA    
+_isxdigit                 002ED9 RLA    _longjmp                  002FA2 RLA    
+_ltoa                     003003 RLA    _main                     00206F RLA    
+_printf                   00318F RLA    _rand                     00321F RLA    
+_read                     003247 RLA    _scanf                    003368 RLA    
+_srand                    003213 RLA    _stdin                    003734 RLA    
+_stdout                   003736 RLA    _strlen                   0033E0 RLA    
+_strlower                 0033F6 RLA    _tolower                  003432 RLA    
+_ultoa                    003044 RLA    _ungetc                   003493 RLA    
+_vfprintf                 0034F9 RLA    _vfscanf                  003522 RLA    
+_write                    003555 RLA    addysp                    002C99 RLA    
+addysp1                   002C98 RLA    axlong                    002CA6 RLA    
+axulong                   002CAC RLA    booleq                    003086 RLA    
+callmain                  002CB3 RLA    complax                   002CCA RLA    
+ctypemask                 002CDF RLA    ctypemaskdirect           002CE3 RLA    
+decaxy                    002CFD RLA    decsp1                    002D06 RLA    
+decsp4                    002D0F RLA    decsp6                    002D1C RLA    
+donelib                   002CD3 RLA    fd_index                  003766 RLA    
+fd_table                  003772 RLA    fdtoiocb                  002D2D RLA    
+incsp1                    002E98 RLA    incsp2                    002EA7 RLA    
+incsp3                    002EB5 RLA    incsp6                    002EBA RLA    
+incsp8                    002EBF RLA    initlib                   002063 RLA    
+jmpvec                    003792 RLA    ldaxi                     002F06 RLA    
+ldaxysp                   002F15 RLA    leaa0sp                   002F1C RLA    
+mul8x16                   003104 RLA    mul8x16a                  00310E RLA    
+mulax10                   00313C RLA    negax                     003159 RLA    
+negeax                    002F84 RLA    popax                     002E9F RLA    
+popptr1                   003181 RLA    popsargsudiv16            0033C0 RLA    
+ptr1                      00008A RLZ    ptr2                      00008C RLZ    
+ptr3                      00008E RLZ    ptr4                      000090 RLZ    
+push1                     0031C2 RLA    pusha                     0031CB RLA    
+pusha0                    0031DF RLA    pushax                    0031E1 RLA    
+pusheax                   002FD3 RLA    pushwysp                  0031F9 RLA    
+regbank                   000096 RLZ    regsave                   000086 RLZ    
+regswap2                  003321 RLA    return0                   003337 RLA    
+sp                        000082 RLZ    sreg                      000084 RLZ    
+start                     002001 RLA    tmp1                      000092 RLZ    
+tmp2                      000093 RLZ    tmp3                      000094 RLZ    
+tmp4                      000095 RLZ    tosaddeax                 002EE7 RLA    
+tosmoda0                  0030AC RLA    tosmuleax                 002F2E RLA    
+tossuba0                  00341D RLA    tosudivax                 003446 RLA    
+tosumulax                 0030BD RLA    udiv16                    003455 RLA    
+zerobss                   00357D RLA    
+
+
+Exports list by value:
+----------------------
+__DESTRUCTOR_COUNT__      000000 REA    __LOWCODE_SIZE__          000000 REA    
+__RESERVED_MEMORY__       000000 REA    __CONSTRUCTOR_COUNT__     000000 REA    
+__STARTUP__               000001 REA    __AUTOSTART__             000001 REA    
+__SYSCHKHDR__             000001 REA    __SYSCHKTRL__             000001 REA    
+__EXEHDR__                000001 REA    sp                        000082 RLZ    
+sreg                      000084 RLZ    regsave                   000086 RLZ    
+ptr1                      00008A RLZ    ptr2                      00008C RLZ    
+ptr3                      00008E RLZ    ptr4                      000090 RLZ    
+tmp1                      000092 RLZ    tmp2                      000093 RLZ    
+tmp3                      000094 RLZ    tmp4                      000095 RLZ    
+regbank                   000096 RLZ    __BSS_SIZE__              0000CE REA    
+__STACKSIZE__             000800 REA    __STARTADDRESS__          002000 REA    
+__MAIN_START__            002000 RLA    start                     002001 RLA    
+initlib                   002063 RLA    __LOWCODE_RUN__           002063 RLA    
+__CONSTRUCTOR_TABLE__     00206F RLA    _main                     00206F RLA    
+__directerrno             002139 RLA    __mappederrno             002143 RLA    
+__printf                  002246 RLA    __scanf                   0024F8 RLA    
+__seterrno                002C8F RLA    addysp1                   002C98 RLA    
+addysp                    002C99 RLA    axlong                    002CA6 RLA    
+axulong                   002CAC RLA    callmain                  002CB3 RLA    
+complax                   002CCA RLA    donelib                   002CD3 RLA    
+ctypemask                 002CDF RLA    ctypemaskdirect           002CE3 RLA    
+decaxy                    002CFD RLA    decsp1                    002D06 RLA    
+decsp4                    002D0F RLA    decsp6                    002D1C RLA    
+__do_oserror              002D29 RLA    fdtoiocb                  002D2D RLA    
+_fgetc                    002D4F RLA    _ferror                   002DFC RLA    
+__SYSCHK_LOAD__           002E00 RLA    _fwrite                   002E1D RLA    
+__SYSTEM_CHECK__          002E47 REA    incsp1                    002E98 RLA    
+popax                     002E9F RLA    incsp2                    002EA7 RLA    
+incsp3                    002EB5 RLA    incsp6                    002EBA RLA    
+incsp8                    002EBF RLA    __inviocb                 002EC4 RLA    
+_isdigit                  002EC9 RLA    _isspace                  002ED1 RLA    
+_isxdigit                 002ED9 RLA    tosaddeax                 002EE7 RLA    
+__SYSCHK_END__            002EF6 RLA    ldaxi                     002F06 RLA    
+ldaxysp                   002F15 RLA    leaa0sp                   002F1C RLA    
+tosmuleax                 002F2E RLA    negeax                    002F84 RLA    
+_longjmp                  002FA2 RLA    pusheax                   002FD3 RLA    
+_ltoa                     003003 RLA    _ultoa                    003044 RLA    
+booleq                    003086 RLA    tosmoda0                  0030AC RLA    
+tosumulax                 0030BD RLA    mul8x16                   003104 RLA    
+mul8x16a                  00310E RLA    mulax10                   00313C RLA    
+negax                     003159 RLA    __osmaperrno              003167 RLA    
+popptr1                   003181 RLA    _printf                   00318F RLA    
+push1                     0031C2 RLA    pusha                     0031CB RLA    
+pusha0                    0031DF RLA    pushax                    0031E1 RLA    
+pushwysp                  0031F9 RLA    _srand                    003213 RLA    
+_rand                     00321F RLA    _read                     003247 RLA    
+regswap2                  003321 RLA    return0                   003337 RLA    
+__rwsetup                 00333B RLA    _scanf                    003368 RLA    
+__setjmp                  00339B RLA    popsargsudiv16            0033C0 RLA    
+_strlen                   0033E0 RLA    _strlower                 0033F6 RLA    
+tossuba0                  00341D RLA    _tolower                  003432 RLA    
+tosudivax                 003446 RLA    udiv16                    003455 RLA    
+_ungetc                   003493 RLA    _vfprintf                 0034F9 RLA    
+_vfscanf                  003522 RLA    _write                    003555 RLA    
+zerobss                   00357D RLA    __hextab                  00362D RLA    
+__longminstr              00363D RLA    __ctype                   003659 RLA    
+__ctypeidx                003664 RLA    __DESTRUCTOR_TABLE__      00371C RLA    
+_stdin                    003734 RLA    _stdout                   003736 RLA    
+fd_index                  003766 RLA    fd_table                  003772 RLA    
+jmpvec                    003792 RLA    __BSS_LOAD__              0037A7 RLA    
+__BSS_RUN__               0037A7 RLA    __oserror                 0037AB RLA    
+__errno                   00381E RLA    
+
+
+Imports list:
+-------------
+__AUTOSTART__ (exetrailer.o):
+    [linker generated]        atari.cfg:7
+__BSS_LOAD__ ([linker generated]):
+    exehdr.o                  atari/exehdr.s:4
+__BSS_RUN__ ([linker generated]):
+    zerobss.o                 common/zerobss.s:8
+    system_check.o            atari/system_check.s:23
+__BSS_SIZE__ ([linker generated]):
+    zerobss.o                 common/zerobss.s:8
+    system_check.o            atari/system_check.s:23
+__CONSTRUCTOR_COUNT__ ([linker generated]):
+    condes.o                  runtime/condes.s:18
+__CONSTRUCTOR_TABLE__ ([linker generated]):
+    condes.o                  runtime/condes.s:18
+__DESTRUCTOR_COUNT__ ([linker generated]):
+    condes.o                  runtime/condes.s:19
+__DESTRUCTOR_TABLE__ ([linker generated]):
+    condes.o                  runtime/condes.s:19
+__EXEHDR__ (exehdr.o):
+    [linker generated]        atari.cfg:5
+__LOWCODE_RUN__ ([linker generated]):
+    crt0.o                    atari/crt0.s:19
+__LOWCODE_SIZE__ ([linker generated]):
+    crt0.o                    atari/crt0.s:19
+__MAIN_START__ ([linker generated]):
+    exehdr.o                  atari/exehdr.s:4
+__RESERVED_MEMORY__ ([linker generated]):
+    system_check.o            atari/system_check.s:25
+    crt0.o                    atari/crt0.s:17
+    [linker generated]        atari.cfg:25
+__STACKSIZE__ ([linker generated]):
+    system_check.o            atari/system_check.s:24
+    [linker generated]        atari.cfg:25
+__STARTADDRESS__ ([linker generated]):
+    system_check.o            atari/system_check.s:20
+__STARTUP__ (crt0.o):
+    main.o                    main.s:24
+__SYSCHKHDR__ (system_check_hdr.o):
+    system_check.o            atari/system_check.s:28
+__SYSCHKTRL__ (system_check_trailer.o):
+    system_check.o            atari/system_check.s:28
+__SYSCHK_END__ (system_check.o):
+    system_check_hdr.o        atari/system_check_hdr.s:7
+__SYSCHK_LOAD__ ([linker generated]):
+    system_check_hdr.o        atari/system_check_hdr.s:7
+__SYSTEM_CHECK__ (system_check.o):
+    system_check_trailer.o    atari/system_check_trailer.s:7
+    [linker generated]        atari.cfg:6
+__ctype (ctype.o):
+    ctypemask.o               common/ctypemask.s:23
+__ctypeidx (ctype.o):
+    ctypemask.o               common/ctypemask.s:24
+__directerrno (_directerrno.o):
+    inviocb.o                 D:/MT/atari/cc65-current/cc65/asminc/errno.inc:10
+__do_oserror (do_oserr.o):
+    write.o                   atari/write.s:5
+    read.o                    atari/read.s:8
+__errno (errno.o):
+    _seterrno.o               D:/MT/atari/cc65-current/cc65/asminc/errno.inc:7
+__hextab (_hextab.o):
+    ltoa.o                    common/ltoa.s:10
+__inviocb (inviocb.o):
+    write.o                   atari/write.s:5
+    read.o                    atari/read.s:8
+__longminstr (_longminstr.o):
+    ltoa.o                    common/ltoa.s:10
+__mappederrno (_mappederrno.o):
+    do_oserr.o                D:/MT/atari/cc65-current/cc65/asminc/errno.inc:10
+__oserror (_oserror.o):
+    _mappederrno.o            D:/MT/atari/cc65-current/cc65/asminc/errno.inc:7
+    _directerrno.o            D:/MT/atari/cc65-current/cc65/asminc/errno.inc:7
+    write.o                   atari/write.s:5
+    read.o                    atari/read.s:8
+__osmaperrno (oserror.o):
+    _mappederrno.o            D:/MT/atari/cc65-current/cc65/asminc/errno.inc:8
+__printf (_printf.o):
+    vfprintf.o                common/vfprintf.s:10
+__rwsetup (rwcommon.o):
+    write.o                   atari/write.s:5
+    read.o                    atari/read.s:8
+__scanf (_scanf.o):
+    vfscanf.o                 common/_scanf.inc:17
+__seterrno (_seterrno.o):
+    _mappederrno.o            D:/MT/atari/cc65-current/cc65/asminc/errno.inc:9
+    _directerrno.o            D:/MT/atari/cc65-current/cc65/asminc/errno.inc:9
+    ungetc.o                  D:/MT/atari/cc65-current/cc65/asminc/errno.inc:9
+    fwrite.o                  D:/MT/atari/cc65-current/cc65/asminc/errno.inc:9
+    fmisc.o                   D:/MT/atari/cc65-current/cc65/asminc/errno.inc:9
+    _scanf.o                  ../libwrk/atari/_scanf.s:16
+__setjmp (setjmp.o):
+    _scanf.o                  ../libwrk/atari/_scanf.s:14
+_ferror (fmisc.o):
+    vfscanf.o                 common/vfscanf.s:9
+_fgetc (fgetc.o):
+    vfscanf.o                 common/vfscanf.s:9
+_fwrite (fwrite.o):
+    vfprintf.o                common/vfprintf.s:10
+_isdigit (isdigit.o):
+    _scanf.o                  ../libwrk/atari/_scanf.s:17
+_isspace (isspace.o):
+    _scanf.o                  ../libwrk/atari/_scanf.s:18
+_isxdigit (isxdigit.o):
+    _scanf.o                  ../libwrk/atari/_scanf.s:19
+_longjmp (longjmp.o):
+    _scanf.o                  ../libwrk/atari/_scanf.s:15
+_ltoa (ltoa.o):
+    _printf.o                 common/_printf.s:12
+_main (main.o):
+    callmain.o                runtime/callmain.s:11
+_printf (printf.o):
+    main.o                    main.s:29
+_rand (rand.o):
+    main.o                    main.s:31
+_read (read.o):
+    fgetc.o                   ../libwrk/atari/fgetc.s:14
+_scanf (scanf.o):
+    main.o                    main.s:30
+_srand (rand.o):
+    main.o                    main.s:32
+_stdin (_file.o):
+    scanf.o                   common/scanf.s:10
+_stdout (_file.o):
+    printf.o                  common/printf.s:8
+_strlen (strlen.o):
+    _printf.o                 common/_printf.s:13
+_strlower (strlower.o):
+    _printf.o                 common/_printf.s:13
+_tolower (tolower.o):
+    _scanf.o                  ../libwrk/atari/_scanf.s:20
+_ultoa (ltoa.o):
+    _printf.o                 common/_printf.s:12
+_ungetc (ungetc.o):
+    vfscanf.o                 common/vfscanf.s:9
+_vfprintf (vfprintf.o):
+    printf.o                  common/printf.s:8
+_vfscanf (vfscanf.o):
+    scanf.o                   common/scanf.s:10
+_write (write.o):
+    fwrite.o                  common/fwrite.s:10
+addysp (addysp.o):
+    incsp8.o                  runtime/incsp8.s:8
+    incsp6.o                  runtime/incsp6.s:8
+    incsp3.o                  runtime/incsp3.s:8
+    fwrite.o                  common/fwrite.s:11
+    scanf.o                   common/scanf.s:10
+    printf.o                  common/printf.s:8
+addysp1 (addysp.o):
+    sub.o                     runtime/sub.s:8
+    lmul.o                    runtime/lmul.s:9
+    ladd.o                    runtime/ladd.s:8
+axlong (axlong.o):
+    _printf.o                 common/_printf.s:11
+axulong (axlong.o):
+    _scanf.o                  ../libwrk/atari/_scanf.s:1078
+    _scanf.o                  ../libwrk/atari/_scanf.s:1078
+    _printf.o                 common/_printf.s:11
+booleq (makebool.o):
+    _scanf.o                  ../libwrk/atari/_scanf.s:1078
+callmain (callmain.o):
+    crt0.o                    atari/crt0.s:16
+complax (compl.o):
+    _scanf.o                  ../libwrk/atari/_scanf.s:1078
+ctypemask (ctypemask.o):
+    isxdigit.o                common/isxdigit.s:15
+    isspace.o                 common/isspace.s:15
+    isdigit.o                 common/isdigit.s:15
+ctypemaskdirect (ctypemask.o):
+    tolower.o                 common/tolower.s:15
+    strlower.o                common/strlower.s:14
+decaxy (decaxy.o):
+    _scanf.o                  ../libwrk/atari/_scanf.s:1078
+decsp1 (decsp1.o):
+    fgetc.o                   ../libwrk/atari/fgetc.s:95
+decsp4 (decsp4.o):
+    lpush.o                   runtime/lpush.s:12
+decsp6 (decsp6.o):
+    _printf.o                 common/_printf.s:11
+donelib (condes.o):
+    crt0.o                    atari/crt0.s:15
+fd_index (fdtab.o):
+    fdtoiocb.o                atari/fdtoiocb.s:10
+fd_table (fdtab.o):
+    fdtoiocb.o                atari/fdtoiocb.s:10
+fdtoiocb (fdtoiocb.o):
+    rwcommon.o                atari/rwcommon.s:8
+incsp1 (incsp1.o):
+    _scanf.o                  ../libwrk/atari/_scanf.s:1078
+    _scanf.o                  ../libwrk/atari/_scanf.s:1078
+    _scanf.o                  ../libwrk/atari/_scanf.s:1078
+    _scanf.o                  ../libwrk/atari/_scanf.s:1078
+    _scanf.o                  ../libwrk/atari/_scanf.s:1078
+incsp2 (incsp2.o):
+    popptr1.o                 runtime/popptr1.s:8
+incsp3 (incsp3.o):
+    fgetc.o                   ../libwrk/atari/fgetc.s:95
+incsp6 (incsp6.o):
+    fwrite.o                  common/fwrite.s:11
+    vfprintf.o                common/vfprintf.s:9
+incsp8 (incsp8.o):
+    _scanf.o                  ../libwrk/atari/_scanf.s:1078
+initlib (condes.o):
+    crt0.o                    atari/crt0.s:15
+jmpvec (jmpvec.o):
+    _scanf.o                  ../libwrk/atari/_scanf.s:1078
+    _scanf.o                  ../libwrk/atari/_scanf.s:1078
+ldaxi (ldaxi.o):
+    _scanf.o                  ../libwrk/atari/_scanf.s:1078
+    _scanf.o                  ../libwrk/atari/_scanf.s:1078
+ldaxysp (ldaxsp.o):
+    fwrite.o                  common/fwrite.s:11
+    _scanf.o                  ../libwrk/atari/_scanf.s:1078
+leaa0sp (leaaxsp.o):
+    fgetc.o                   ../libwrk/atari/fgetc.s:95
+mul8x16 (mul8.o):
+    mul.o                     runtime/mul.s:8
+mul8x16a (mul8.o):
+    mul.o                     runtime/mul.s:8
+mulax10 (mulax10.o):
+    _scanf.o                  ../libwrk/atari/_scanf.s:1078
+negax (negabs.o):
+    shelp.o                   runtime/shelp.s:11
+    mod.o                     runtime/mod.s:11
+negeax (lneg.o):
+    ltoa.o                    common/ltoa.s:9
+    _scanf.o                  ../libwrk/atari/_scanf.s:1078
+popax (incsp2.o):
+    ungetc.o                  common/ungetc.s:10
+    rwcommon.o                atari/rwcommon.s:7
+    ltoa.o                    common/ltoa.s:9
+    _printf.o                 common/_printf.s:11
+    shelp.o                   runtime/shelp.s:11
+popptr1 (popptr1.o):
+    mul8.o                    runtime/mul8.s:9
+    mul.o                     runtime/mul.s:9
+    ltoa.o                    common/ltoa.s:9
+    longjmp.o                 common/longjmp.s:9
+    udiv.o                    runtime/udiv.s:9
+popsargsudiv16 (shelp.o):
+    mod.o                     runtime/mod.s:11
+ptr1 (zeropage.o):
+    ungetc.o                  common/ungetc.s:11
+    strlower.o                common/strlower.s:13
+    setjmp.o                  common/setjmp.s:11
+    popptr1.o                 runtime/popptr1.s:9
+    mulax10.o                 runtime/mulax10.s:9
+    mul8.o                    runtime/mul8.s:10
+    mul.o                     runtime/mul.s:10
+    ltoa.o                    common/ltoa.s:11
+    longjmp.o                 common/longjmp.s:10
+    lmul.o                    runtime/lmul.s:10
+    ldaxi.o                   runtime/ldaxi.s:8
+    fwrite.o                  common/fwrite.s:14
+    fmisc.o                   common/fmisc.s:9
+    _scanf.o                  ../libwrk/atari/_scanf.s:11
+    _printf.o                 D:/MT/atari/cc65-current/cc65/asminc/zeropage.inc:12
+    zerobss.o                 common/zerobss.s:9
+    vfprintf.o                common/vfprintf.s:11
+    udiv.o                    runtime/udiv.s:10
+    shelp.o                   runtime/shelp.s:12
+    scanf.o                   common/scanf.s:11
+    printf.o                  common/printf.s:9
+ptr2 (zeropage.o):
+    strlower.o                common/strlower.s:13
+    strlen.o                  common/strlen.s:12
+    ltoa.o                    common/ltoa.s:11
+    longjmp.o                 common/longjmp.s:10
+    _printf.o                 D:/MT/atari/cc65-current/cc65/asminc/zeropage.inc:12
+ptr3 (zeropage.o):
+    ltoa.o                    common/ltoa.s:11
+    lmul.o                    runtime/lmul.s:10
+    vfscanf.o                 D:/MT/atari/cc65-current/cc65/asminc/zeropage.inc:12
+ptr4 (zeropage.o):
+    mul8.o                    runtime/mul8.s:10
+    mul.o                     runtime/mul.s:10
+    lmul.o                    runtime/lmul.s:10
+    udiv.o                    runtime/udiv.s:10
+    shelp.o                   runtime/shelp.s:12
+push1 (push1.o):
+    _printf.o                 common/_printf.s:11
+    vfprintf.o                common/vfprintf.s:9
+pusha (pusha.o):
+    _scanf.o                  ../libwrk/atari/_scanf.s:1078
+    _scanf.o                  ../libwrk/atari/_scanf.s:1078
+    _scanf.o                  ../libwrk/atari/_scanf.s:1078
+    _scanf.o                  ../libwrk/atari/_scanf.s:1078
+    _scanf.o                  ../libwrk/atari/_scanf.s:1078
+pusha0 (pushax.o):
+    push1.o                   runtime/push1.s:8
+    fgetc.o                   ../libwrk/atari/fgetc.s:95
+    _scanf.o                  ../libwrk/atari/_scanf.s:1078
+    main.o                    main.s:185
+pushax (pushax.o):
+    fwrite.o                  common/fwrite.s:11
+    fgetc.o                   ../libwrk/atari/fgetc.s:95
+    callmain.o                runtime/callmain.s:11
+    _scanf.o                  ../libwrk/atari/_scanf.s:1078
+    _scanf.o                  ../libwrk/atari/_scanf.s:1078
+    _printf.o                 common/_printf.s:11
+    scanf.o                   common/scanf.s:10
+    printf.o                  common/printf.s:8
+    main.o                    main.s:185
+pusheax (lpush.o):
+    _scanf.o                  ../libwrk/atari/_scanf.s:1078
+    _printf.o                 common/_printf.s:11
+pushwysp (pushwsp.o):
+    fwrite.o                  common/fwrite.s:11
+    vfprintf.o                common/vfprintf.s:9
+regbank (zeropage.o):
+    regswap2.o                runtime/regswap2.s:8
+    fgetc.o                   ../libwrk/atari/fgetc.s:10
+    _scanf.o                  ../libwrk/atari/_scanf.s:10
+    _printf.o                 D:/MT/atari/cc65-current/cc65/asminc/zeropage.inc:14
+regsave (zeropage.o):
+    _scanf.o                  ../libwrk/atari/_scanf.s:10
+regswap2 (regswap2.o):
+    fgetc.o                   ../libwrk/atari/fgetc.s:95
+return0 (return0.o):
+    setjmp.o                  common/setjmp.s:10
+    fmisc.o                   common/fmisc.s:8
+sp (zeropage.o):
+    decsp4.o                  runtime/decsp4.s:8
+    decsp1.o                  runtime/decsp1.s:8
+    sub.o                     runtime/sub.s:9
+    setjmp.o                  common/setjmp.s:11
+    regswap2.o                runtime/regswap2.s:8
+    pushwsp.o                 runtime/pushwsp.s:8
+    pusha.o                   runtime/pusha.s:8
+    popptr1.o                 runtime/popptr1.s:9
+    lpush.o                   runtime/lpush.s:13
+    longjmp.o                 common/longjmp.s:10
+    lmul.o                    runtime/lmul.s:10
+    leaaxsp.o                 runtime/leaaxsp.s:8
+    ldaxsp.o                  runtime/ldaxsp.s:8
+    ladd.o                    runtime/ladd.s:9
+    incsp2.o                  runtime/incsp2.s:8
+    incsp1.o                  runtime/incsp1.s:8
+    fgetc.o                   ../libwrk/atari/fgetc.s:10
+    decsp6.o                  runtime/decsp6.s:8
+    addysp.o                  runtime/addysp.s:8
+    _scanf.o                  ../libwrk/atari/_scanf.s:10
+    _printf.o                 D:/MT/atari/cc65-current/cc65/asminc/zeropage.inc:11
+    vfscanf.o                 D:/MT/atari/cc65-current/cc65/asminc/zeropage.inc:11
+    vfprintf.o                common/vfprintf.s:11
+    scanf.o                   common/scanf.s:11
+    pushax.o                  runtime/pushax.s:8
+    printf.o                  common/printf.s:9
+    crt0.o                    D:/MT/atari/cc65-current/cc65/asminc/zeropage.inc:11
+sreg (zeropage.o):
+    ltoa.o                    common/ltoa.s:11
+    lpush.o                   runtime/lpush.s:13
+    lneg.o                    runtime/lneg.s:11
+    lmul.o                    runtime/lmul.s:10
+    ladd.o                    runtime/ladd.s:9
+    axlong.o                  runtime/axlong.s:9
+    _scanf.o                  ../libwrk/atari/_scanf.s:10
+    _printf.o                 D:/MT/atari/cc65-current/cc65/asminc/zeropage.inc:11
+    udiv.o                    runtime/udiv.s:10
+    mod.o                     runtime/mod.s:12
+start (crt0.o):
+    exetrailer.o              atari/exetrailer.s:4
+tmp1 (zeropage.o):
+    ungetc.o                  common/ungetc.s:11
+    mul.o                     runtime/mul.s:10
+    ltoa.o                    common/ltoa.s:11
+    ladd.o                    runtime/ladd.s:9
+    decaxy.o                  runtime/decaxy.s:8
+    _printf.o                 D:/MT/atari/cc65-current/cc65/asminc/zeropage.inc:13
+    shelp.o                   runtime/shelp.s:12
+    mod.o                     runtime/mod.s:12
+tmp2 (zeropage.o):
+    lmul.o                    runtime/lmul.s:10
+    shelp.o                   runtime/shelp.s:12
+tmp3 (zeropage.o):
+    lmul.o                    runtime/lmul.s:10
+tmp4 (zeropage.o):
+    lmul.o                    runtime/lmul.s:10
+tosaddeax (ladd.o):
+    _scanf.o                  ../libwrk/atari/_scanf.s:1078
+tosmoda0 (mod.o):
+    main.o                    main.s:185
+tosmuleax (lmul.o):
+    _scanf.o                  ../libwrk/atari/_scanf.s:1078
+tossuba0 (sub.o):
+    _scanf.o                  ../libwrk/atari/_scanf.s:1078
+tosudivax (udiv.o):
+    fwrite.o                  common/fwrite.s:12
+tosumulax (mul.o):
+    fwrite.o                  common/fwrite.s:12
+udiv16 (udiv.o):
+    shelp.o                   runtime/shelp.s:11
+zerobss (zerobss.o):
+    crt0.o                    atari/crt0.s:16
+

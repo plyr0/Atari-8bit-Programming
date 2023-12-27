@@ -1,0 +1,10 @@
+{
+    "files.associations": {
+        "stdio.h": "c",
+        "atari.h": "c",
+        "peekpoke.h": "c",
+        "conio.h": "c",
+        "string.h": "c",
+        "stdint.h": "c"
+    }
+}
