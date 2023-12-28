@@ -16,7 +16,7 @@ csym	id=12,name="wait_for_vblank_clock",scope=10,type=0,sc=ext,sym=48
 csym	id=13,name="init_vbi_dli",scope=11,type=0,sc=ext,sym=47
 csym	id=14,name="wait_for_vblank",scope=12,type=0,sc=ext,sym=46
 csym	id=15,name="main",scope=13,type=0,sc=ext,sym=45
-file	id=0,name="main.s",size=18190,mtime=0x658DD064,mod=0
+file	id=0,name="main.s",size=18190,mtime=0x658DD8F6,mod=0
 file	id=1,name="C:\cc65\asminc/longbranch.mac",size=2720,mtime=0x61BCBD0D,mod=0
 file	id=2,name="main.c",size=7361,mtime=0x658DD061,mod=0
 file	id=3,name="C:\cc65\include/atari.h",size=22797,mtime=0x6587F65E,mod=0
