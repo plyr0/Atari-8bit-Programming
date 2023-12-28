@@ -1,18 +1,18 @@
 Modules list:
 -------------
 main.o:
-    CODE              Offs=000000  Size=00036C  Align=00001  Fill=0000
+    CODE              Offs=000000  Size=0003A4  Align=00001  Fill=0000
     RODATA            Offs=000000  Size=000034  Align=00001  Fill=0000
     BSS               Offs=000000  Size=00001A  Align=00001  Fill=0000
     DATA              Offs=000000  Size=000038  Align=00001  Fill=0000
     ZEROPAGE          Offs=000000  Size=00000E  Align=00001  Fill=0000
 C:\cc65\lib/atari.lib(addysp.o):
-    CODE              Offs=00036C  Size=00000E  Align=00001  Fill=0000
+    CODE              Offs=0003A4  Size=00000E  Align=00001  Fill=0000
 C:\cc65\lib/atari.lib(callmain.o):
-    CODE              Offs=00037A  Size=000017  Align=00001  Fill=0000
+    CODE              Offs=0003B2  Size=000017  Align=00001  Fill=0000
     DATA              Offs=000038  Size=000004  Align=00001  Fill=0000
 C:\cc65\lib/atari.lib(condes.o):
-    CODE              Offs=000391  Size=00000C  Align=00001  Fill=0000
+    CODE              Offs=0003C9  Size=00000C  Align=00001  Fill=0000
     DATA              Offs=00003C  Size=000025  Align=00001  Fill=0000
     ONCE              Offs=000000  Size=00000C  Align=00001  Fill=0000
 C:\cc65\lib/atari.lib(crt0.o):
@@ -24,15 +24,15 @@ C:\cc65\lib/atari.lib(exehdr.o):
 C:\cc65\lib/atari.lib(exetrailer.o):
     AUTOSTRT          Offs=000000  Size=000006  Align=00001  Fill=0000
 C:\cc65\lib/atari.lib(incsp2.o):
-    CODE              Offs=00039D  Size=000016  Align=00001  Fill=0000
+    CODE              Offs=0003D5  Size=000016  Align=00001  Fill=0000
 C:\cc65\lib/atari.lib(incsp4.o):
-    CODE              Offs=0003B3  Size=000005  Align=00001  Fill=0000
+    CODE              Offs=0003EB  Size=000005  Align=00001  Fill=0000
 C:\cc65\lib/atari.lib(memcpy.o):
-    CODE              Offs=0003B8  Size=00003C  Align=00001  Fill=0000
+    CODE              Offs=0003F0  Size=00003C  Align=00001  Fill=0000
 C:\cc65\lib/atari.lib(popptr1.o):
-    CODE              Offs=0003F4  Size=00000E  Align=00001  Fill=0000
+    CODE              Offs=00042C  Size=00000E  Align=00001  Fill=0000
 C:\cc65\lib/atari.lib(pushax.o):
-    CODE              Offs=000402  Size=00001A  Align=00001  Fill=0000
+    CODE              Offs=00043A  Size=00001A  Align=00001  Fill=0000
 C:\cc65\lib/atari.lib(system_check.o):
     SYSCHK            Offs=000000  Size=0000F6  Align=00001  Fill=0000
 C:\cc65\lib/atari.lib(system_check_hdr.o):
@@ -40,7 +40,7 @@ C:\cc65\lib/atari.lib(system_check_hdr.o):
 C:\cc65\lib/atari.lib(system_check_trailer.o):
     SYSCHKTRL         Offs=000000  Size=000006  Align=00001  Fill=0000
 C:\cc65\lib/atari.lib(zerobss.o):
-    CODE              Offs=00041C  Size=000023  Align=00001  Fill=0000
+    CODE              Offs=000454  Size=000023  Align=00001  Fill=0000
 C:\cc65\lib/atari.lib(zeropage.o):
     ZEROPAGE          Offs=00000E  Size=00001A  Align=00001  Fill=0000
 
@@ -57,34 +57,34 @@ SYSCHKTRL             000000  000005  000006  00001
 ZEROPAGE              000082  0000A9  000028  00001
 STARTUP               002000  002062  000063  00001
 ONCE                  002063  00206E  00000C  00001
-CODE                  00206F  0024AD  00043F  00001
-RODATA                0024AE  0024E1  000034  00001
-DATA                  0024E2  002542  000061  00001
-BSS                   002543  002561  00001F  00001
+CODE                  00206F  0024E5  000477  00001
+RODATA                0024E6  002519  000034  00001
+DATA                  00251A  00257A  000061  00001
+BSS                   00257B  002599  00001F  00001
 SYSCHK                002E00  002EF5  0000F6  00001
 
 
 Exports list by name:
 ---------------------
-__AUTOSTART__             000001 REA    __BSS_LOAD__              002543 RLA    
-__BSS_RUN__               002543 RLA    __BSS_SIZE__              00001F REA    
+__AUTOSTART__             000001 REA    __BSS_LOAD__              00257B RLA    
+__BSS_RUN__               00257B RLA    __BSS_SIZE__              00001F REA    
 __CONSTRUCTOR_COUNT__     000000 REA    __CONSTRUCTOR_TABLE__     00206F RLA    
-__DESTRUCTOR_COUNT__      000000 REA    __DESTRUCTOR_TABLE__      0024E2 RLA    
+__DESTRUCTOR_COUNT__      000000 REA    __DESTRUCTOR_TABLE__      00251A RLA    
 __EXEHDR__                000001 REA    __LOWCODE_RUN__           002063 RLA    
 __LOWCODE_SIZE__          000000 REA    __MAIN_START__            002000 RLA    
 __RESERVED_MEMORY__       000000 REA    __STACKSIZE__             000800 REA    
 __STARTADDRESS__          002000 REA    __STARTUP__               000001 REA    
 __SYSCHKHDR__             000001 REA    __SYSCHKTRL__             000001 REA    
 __SYSCHK_END__            002EF6 RLA    __SYSCHK_LOAD__           002E00 RLA    
-__SYSTEM_CHECK__          002E47 REA    _main                     0023AD RLA    
-_memcpy                   002427 RLA    addysp                    0023DC RLA    
-callmain                  0023E9 RLA    donelib                   002400 RLA    
-incsp2                    002414 RLA    incsp4                    002422 RLA    
-initlib                   002063 RLA    popax                     00240C RLA    
-popptr1                   002463 RLA    ptr1                      000098 RLZ    
+__SYSTEM_CHECK__          002E47 REA    _main                     0023E5 RLA    
+_memcpy                   00245F RLA    addysp                    002414 RLA    
+callmain                  002421 RLA    donelib                   002438 RLA    
+incsp2                    00244C RLA    incsp4                    00245A RLA    
+initlib                   002063 RLA    popax                     002444 RLA    
+popptr1                   00249B RLA    ptr1                      000098 RLZ    
 ptr2                      00009A RLZ    ptr3                      00009C RLZ    
-pushax                    002475 RLA    sp                        000090 RLZ    
-start                     002001 RLA    zerobss                   00248B RLA    
+pushax                    0024AD RLA    sp                        000090 RLZ    
+start                     002001 RLA    zerobss                   0024C3 RLA    
 
 
 
@@ -100,14 +100,14 @@ ptr2                      00009A RLZ    ptr3                      00009C RLZ
 __STACKSIZE__             000800 REA    __MAIN_START__            002000 RLA    
 __STARTADDRESS__          002000 REA    start                     002001 RLA    
 initlib                   002063 RLA    __LOWCODE_RUN__           002063 RLA    
-__CONSTRUCTOR_TABLE__     00206F RLA    _main                     0023AD RLA    
-addysp                    0023DC RLA    callmain                  0023E9 RLA    
-donelib                   002400 RLA    popax                     00240C RLA    
-incsp2                    002414 RLA    incsp4                    002422 RLA    
-_memcpy                   002427 RLA    popptr1                   002463 RLA    
-pushax                    002475 RLA    zerobss                   00248B RLA    
-__DESTRUCTOR_TABLE__      0024E2 RLA    __BSS_LOAD__              002543 RLA    
-__BSS_RUN__               002543 RLA    __SYSCHK_LOAD__           002E00 RLA    
+__CONSTRUCTOR_TABLE__     00206F RLA    _main                     0023E5 RLA    
+addysp                    002414 RLA    callmain                  002421 RLA    
+donelib                   002438 RLA    popax                     002444 RLA    
+incsp2                    00244C RLA    incsp4                    00245A RLA    
+_memcpy                   00245F RLA    popptr1                   00249B RLA    
+pushax                    0024AD RLA    zerobss                   0024C3 RLA    
+__DESTRUCTOR_TABLE__      00251A RLA    __BSS_LOAD__              00257B RLA    
+__BSS_RUN__               00257B RLA    __SYSCHK_LOAD__           002E00 RLA    
 __SYSTEM_CHECK__          002E47 REA    __SYSCHK_END__            002EF6 RLA    
 
 
@@ -175,7 +175,7 @@ donelib (condes.o):
 incsp2 (incsp2.o):
     popptr1.o                 runtime/popptr1.s:8
 incsp4 (incsp4.o):
-    main.o                    main.s:924
+    main.o                    main.s:956
 initlib (condes.o):
     crt0.o                    atari/crt0.s:15
 popax (incsp2.o):
@@ -193,10 +193,10 @@ ptr3 (zeropage.o):
     memcpy.o                  common/memcpy.s:15
 pushax (pushax.o):
     callmain.o                runtime/callmain.s:11
-    main.o                    main.s:924
-    main.o                    main.s:924
-    main.o                    main.s:924
-    main.o                    main.s:924
+    main.o                    main.s:956
+    main.o                    main.s:956
+    main.o                    main.s:956
+    main.o                    main.s:956
 sp (zeropage.o):
     incsp2.o                  runtime/incsp2.s:8
     addysp.o                  runtime/addysp.s:8

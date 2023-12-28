@@ -4,9 +4,10 @@
 #include <peekpoke.h>
 #include <string.h>
 
-#define CHARSET_MEM  0x3000
-#define DLIST_MEM    0x4000
-#define SCREEN_MEM   0x5000
+#define CHARSET_MEM   0x3000
+#define CHARSET_MEM2  0x3400
+#define DLIST_MEM     0x4000
+#define SCREEN_MEM    0x5000
 
 #define JOY_NO_MOVE   0
 #define JOY_BIT_LEFT  4
@@ -18,7 +19,7 @@
 
 #ifndef CONSOL
 #define CONSOL 53279
-#define START_BUTTON 6U
+#define START_BUTTON 6
 #endif
 
 #pragma bss-name (push,"ZEROPAGE")
@@ -143,7 +144,7 @@ void printinternal(unsigned char* mem, char* str){
     ch = str[0];
     i = 0;
     while(ch){
-        if(ch>=0 && ch<=0x1F || ch>=0x80 && ch<=0x9F){ 
+        if(ch>0 && ch<=0x1F || ch>=0x80 && ch<=0x9F){ 
             ch += 0x40; //Ruszczyc asembler book
         } else if(ch>=0x20 && ch<=0x5F || ch>=0xA0 && ch<=0xDF){
             ch -= 0x20;
@@ -172,7 +173,7 @@ void update_sprite(void){
     if(ufo_xpos == 79){
         ufo_xpos = 40;
     } else {
-        if(!(counter%4))
+        if(!(counter%8))
             ++ufo_xpos;
     }
 
@@ -215,11 +216,12 @@ void init_antic()
     OS.color4 = 0;
 
     memcpy((void *)CHARSET_MEM, (void *)0xE000, 0x0400); // copy system charset
-
     memcpy((void *)(CHARSET_MEM + 8 * 0x21), sprite_data, 8); // replace one char in the copy
-    memcpy((void *)(CHARSET_MEM + 8 * 0x54), sprite_ufo, 8); // replace one char in the copy
     memcpy((void *)(CHARSET_MEM + 8 * 0x7c), sprite_missile, 8); // replace one char in the copy
     OS.chbas = CHARSET_MEM >> 8; // let the os use new charset
+
+    memcpy((void *)CHARSET_MEM2, (void *)0xE000, 0x0400); // copy system charset
+    memcpy((void *)(CHARSET_MEM2 + 8 * 0x54), sprite_ufo, 8); // replace one char in the copy
 }
 
 void init_vars()
@@ -240,26 +242,35 @@ void dli_routine(void)
 	asm("pha"); asm("txa"); asm("pha"); asm("tya"); asm("pha");
 
 	GTIA_WRITE.colbk = 0x00;
-    //ANTIC.chbase = 0xE0; //MSB of 0xE000
-    for(i=0; i<=8; i++){
-        ANTIC.wsync = 1;
-    }
-    
+    ANTIC.wsync = 1;
+    ANTIC.wsync = 1;
+    ANTIC.wsync = 1;
+    ANTIC.wsync = 1;
+    ANTIC.wsync = 1;
+    ANTIC.wsync = 1;
+    ANTIC.wsync = 1;
+    ANTIC.wsync = 1;
+    ANTIC.wsync = 1;
+    ANTIC.chbase = CHARSET_MEM2 >> 8;
     GTIA_WRITE.colpf0 = 0x08;
     GTIA_WRITE.colpf1 = 0x58;
     GTIA_WRITE.colpf2 = 0xFF;
     GTIA_WRITE.colpf3 = 0x08;
-
     ANTIC.wsync = 1;
     ANTIC.wsync = 1;
     ANTIC.wsync = 1;
-
+    ANTIC.wsync = 1;
+    ANTIC.wsync = 1;
+    ANTIC.wsync = 1;
+    ANTIC.wsync = 1;
+    ANTIC.wsync = 1;
+    ANTIC.chbase = CHARSET_MEM >> 8;
     GTIA_WRITE.colpf0 = 0x45;
     GTIA_WRITE.colpf1 = 0xA3;
     GTIA_WRITE.colpf2 = 0x26;
     GTIA_WRITE.colpf3 = 0xE1;
 
-    for(i=0x70; i<=0x7F; i++){
+    for(i=0x80; i<=0x8E; i++){
         ANTIC.wsync = 1;
         ANTIC.wsync = 1;
         ANTIC.wsync = 1;
@@ -274,13 +285,12 @@ void dli_routine(void)
     }
     GTIA_WRITE.colbk = 0;
 
-    //ANTIC.chbase = CHARSET_MEM >> 8; // MSB / 256
-    
 	asm("pla"); asm("tay"); asm("pla"); asm("tax"); asm("pla"); asm("rti");
 }
 
 void vbi_routine(void)
 {
+    OS.vdslst = &dli_routine;
 	is_vblank_occured = 1;
 	asm("pla"); asm("tay"); asm("pla"); asm("tax"); asm("pla"); asm("rti");
 }
@@ -296,7 +306,7 @@ void init_vbi_dli(void)
 {
 	wait_for_vblank_clock();
 	OS.vvblki = &vbi_routine;
-	OS.vdslst = &dli_routine;
+
 	ANTIC.nmien = NMIEN_DLI | NMIEN_VBI; // start the DLI + VBI with the NMIEN register
 }
 

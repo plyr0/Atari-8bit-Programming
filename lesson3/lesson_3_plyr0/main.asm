@@ -250,32 +250,34 @@ L0003:	rts
 	sta     _ch
 	sty     _i
 	jmp     L0004
-L0012:	lda     _ch
-	cmp     #$20
-	bcc     L0015
-	cmp     #$80
-	bcc     L0016
-	cmp     #$A0
-	bcs     L0016
-L0015:	lda     #$40
-	clc
-	adc     _ch
-	jmp     L0011
-L0016:	lda     _ch
+L0013:	lda     _ch
+	beq     L0014
 	cmp     #$20
 	bcc     L0017
-	cmp     #$60
-	bcc     L001A
-L0017:	lda     _ch
+L0014:	lda     _ch
+	cmp     #$80
+	bcc     L0018
 	cmp     #$A0
-	bcc     L000A
+	bcs     L0018
+L0017:	lda     #$40
+	clc
+	adc     _ch
+	jmp     L0012
+L0018:	lda     _ch
+	cmp     #$20
+	bcc     L0019
+	cmp     #$60
+	bcc     L001C
+L0019:	lda     _ch
+	cmp     #$A0
+	bcc     L000B
 	cmp     #$E0
-	bcs     L000A
-L001A:	lda     _ch
+	bcs     L000B
+L001C:	lda     _ch
 	sec
 	sbc     #$20
-L0011:	sta     _ch
-L000A:	ldy     #$03
+L0012:	sta     _ch
+L000B:	ldy     #$03
 	jsr     ldaxysp
 	sta     ptr1
 	stx     ptr1+1
@@ -290,7 +292,7 @@ L000A:	ldy     #$03
 	lda     (ptr1),y
 	sta     _ch
 L0004:	lda     _ch
-	bne     L0012
+	bne     L0013
 	jmp     incsp4
 
 .endproc
@@ -359,7 +361,7 @@ L0011:	lda     _ufo_xpos+1
 	stx     _ufo_xpos+1
 	jmp     L0016
 L0013:	lda     _counter
-	and     #$03
+	and     #$07
 	bne     L0016
 	inc     _ufo_xpos
 	bne     L0016
@@ -473,15 +475,6 @@ L0011:	lda     #$01
 	ldx     #$00
 	lda     #$08
 	jsr     _memcpy
-	ldx     #$32
-	lda     #$A0
-	jsr     pushax
-	lda     #<(_sprite_ufo)
-	ldx     #>(_sprite_ufo)
-	jsr     pushax
-	ldx     #$00
-	lda     #$08
-	jsr     _memcpy
 	ldx     #$33
 	lda     #$E0
 	jsr     pushax
@@ -493,7 +486,22 @@ L0011:	lda     #$01
 	jsr     _memcpy
 	lda     #$30
 	sta     $02F4
-	rts
+	ldx     #$34
+	lda     #$00
+	jsr     pushax
+	ldx     #$E0
+	jsr     pushax
+	ldx     #$04
+	jsr     _memcpy
+	ldx     #$36
+	lda     #$A0
+	jsr     pushax
+	lda     #<(_sprite_ufo)
+	ldx     #>(_sprite_ufo)
+	jsr     pushax
+	ldx     #$00
+	lda     #$08
+	jmp     _memcpy
 
 .endproc
 
@@ -556,15 +564,19 @@ L0011:	lda     #$01
 	pha
 	lda     #$00
 	sta     $D01A
-	sta     _i
-L000A:	lda     _i
-	cmp     #$09
-	bcs     L000B
 	lda     #$01
 	sta     $D40A
-	inc     _i
-	jmp     L000A
-L000B:	lda     #$08
+	sta     $D40A
+	sta     $D40A
+	sta     $D40A
+	sta     $D40A
+	sta     $D40A
+	sta     $D40A
+	sta     $D40A
+	sta     $D40A
+	lda     #$34
+	sta     $D409
+	lda     #$08
 	sta     $D016
 	lda     #$58
 	sta     $D017
@@ -576,6 +588,13 @@ L000B:	lda     #$08
 	sta     $D40A
 	sta     $D40A
 	sta     $D40A
+	sta     $D40A
+	sta     $D40A
+	sta     $D40A
+	sta     $D40A
+	sta     $D40A
+	lda     #$30
+	sta     $D409
 	lda     #$45
 	sta     $D016
 	lda     #$A3
@@ -584,11 +603,11 @@ L000B:	lda     #$08
 	sta     $D018
 	lda     #$E1
 	sta     $D019
-	lda     #$70
+	lda     #$80
 	sta     _i
-L000C:	lda     _i
-	cmp     #$80
-	bcs     L000D
+L0006:	lda     _i
+	cmp     #$8F
+	bcs     L0007
 	lda     #$01
 	sta     $D40A
 	sta     $D40A
@@ -603,8 +622,8 @@ L000C:	lda     _i
 	lda     _i
 	sta     $D01A
 	inc     _i
-	jmp     L000C
-L000D:	lda     #$00
+	jmp     L0006
+L0007:	lda     #$00
 	sta     $D01A
 	pla
 	tay
@@ -625,6 +644,10 @@ L000D:	lda     #$00
 
 .segment	"CODE"
 
+	lda     #>(_dli_routine)
+	sta     $0200+1
+	lda     #<(_dli_routine)
+	sta     $0200
 	lda     #$01
 	sta     _is_vblank_occured
 	pla
@@ -668,10 +691,6 @@ L0002:	cmp     $14
 	sta     $0222+1
 	lda     #<(_vbi_routine)
 	sta     $0222
-	lda     #>(_dli_routine)
-	sta     $0200+1
-	lda     #<(_dli_routine)
-	sta     $0200
 	lda     #$C0
 	sta     $D40E
 	rts
